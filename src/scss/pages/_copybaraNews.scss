@@ -1,0 +1,194 @@
+.title__capybaraNews {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 5.5rem;
+    color: var(--1);
+    padding-bottom: 4.7rem;
+}
+
+
+.capybaraNews__book-left-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--1);
+    margin-bottom: 5.1rem;
+    width: 51.5rem;
+}
+
+.capybaraNews__book-left-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--7);
+    max-width: 54.9rem;
+    padding-bottom: 5.4rem;
+
+}
+
+.capybaraNews__book-left-text span {
+    color: var(--3);
+}
+
+.capybaraNews__book-left-img img {
+    width: 29.2rem;
+    height: 23.9rem;
+}
+
+.capybaraNews__book-left-img {
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 6rem;
+}
+
+.capybaraNews__book-left-textPink {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--3);
+    margin-bottom: 3.2rem;
+    width: 54.9rem;
+}
+
+.capybaraNews__book-left-mail {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--3);
+}
+
+
+.capybaraNews__book-right-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--7);
+    width: 54.9rem;
+    margin-bottom: 3rem;
+}
+
+.capybaraNews__book-right-text span {
+    color: var(--3);
+    width: 54.9rem;
+}
+
+
+.capybaraNews__book-right-img img {
+    width: 29.2rem;
+    height: 23.9rem;
+}
+
+.capybaraNews__book-right-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+
+.capybaraNews__book {
+    display: flex;
+    gap: 22.4rem;
+}
+
+.capybaraNews__book-left {
+    padding: 10.7rem 0 26.0rem 0;
+}
+
+.capybaraNews__book-right {
+    padding: 10.7rem 9.7rem 14rem 0;
+}
+
+.capybaraNews {
+    position: relative;
+
+}
+
+.boojFull {
+    position: absolute;
+    width: 162.5rem;
+    height: 101.4rem;
+    z-index: -1;
+    left: 14rem;
+    top: 11rem;
+}
+
+.capybaraNews {
+    padding-bottom: 15.4rem;
+}
+
+.minbook {
+    display: none;
+}
+
+@media (max-width : 962px) {
+
+    .title__capybaraNews {
+        font-weight: 400;
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .container {
+        padding: 0 2.8rem;
+    }
+
+    .boojFull {
+        display: none;
+    }
+
+    .capybaraNews__book-right {
+        display: none;
+    }
+
+    .capybaraNews {
+        padding-bottom: 4.3rem;
+    }
+
+    .capybaraNews__book-left-title {
+        margin-bottom: 2.7rem;
+        font-size: 1.8rem;
+        width: 27rem;
+    }
+
+    .capybaraNews__book-left-text {
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 2.8rem;
+        width: 28.7rem;
+    }
+
+    .capybaraNews__book-left-img img {
+        width: 15.3rem;
+        height: 12.5rem;
+    }
+
+    .capybaraNews__book-left-img {
+        gap: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .capybaraNews__book-left-textPink {
+        width: 28.7rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    .capybaraNews__book-left-mail {
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .capybaraNews__book-left {
+        padding: 5.6rem 0 13.6rem 3.3rem;
+    }
+
+    .minbook {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 42.5rem;
+        top: 4.6rem;
+        left: 1.5rem;
+        height: 53.1rem;
+    }
+}

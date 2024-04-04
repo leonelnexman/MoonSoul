@@ -1,0 +1,289 @@
+.product-page{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    &__dec1{
+        position: absolute;
+        top: 24.5rem;
+        right: 0;
+        z-index: -1;
+        svg{
+            width: 58.8rem;
+            height: 66.4rem;
+        }
+    }
+    &__dec2{
+        position: absolute;
+        top: 133.4rem;
+        right: 0;
+        z-index: -1;
+        svg{
+            width: 42.5rem;
+            height: 112.5rem;
+        }
+    }
+    &__dec3{
+        position: absolute;
+        top: 157.8rem;
+        left: 0;
+        z-index: -1;
+        svg{
+            width: 72.8rem;
+            height: 68.5rem;
+        }
+    }
+    .width-container{
+        .container{
+            width: 119.6rem;
+        }
+    }
+    .marquee{
+        margin-bottom: 5rem;
+    }
+    &__wrapper{
+        display: flex;
+        gap: 4.8rem;
+        width: 100%;
+        border: 1px solid rgba(73, 73, 73, 0.25);
+        border-radius: 1.5rem;
+        background: var(--5);
+    }
+    &__img{
+        width: 53.9rem;
+        height: 82.3rem;
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 25rem;
+            height: 25rem;
+            object-fit: cover;
+          }
+      
+          body {
+            background: #000;
+            color: #000;
+          }
+      
+          .swiper {
+            width: 100%;
+            height: 18rem;
+            margin-left: auto;
+            margin-right: auto;
+          }
+      
+          .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+          }
+      
+          .mySwiper2 {
+            border-radius: 1.5rem 0 0 0;
+            width: 53.9rem;
+            height: 65.9rem;
+            .swiper-slide{
+                background: #fff;
+                border-bottom: 1px solid rgba(73, 73, 73, 0.25);
+                border-right: 1px solid rgba(73, 73, 73, 0.25);
+            }
+          }
+      
+          .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            border-radius: 0 0 0 1.5rem;
+            .swiper-slide{
+                background: #fff;
+                border-bottom: 0.1rem solid rgba(73, 73, 73, 0.25);
+                border-right: 0.1rem solid rgba(73, 73, 73, 0.25);
+            }
+            .swiper-slide img {
+                display: block;
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover;
+              }
+          }
+      
+          .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+          }
+    }
+    &__info{
+        padding-top: 6.1rem;
+    }
+    .breadcrambs{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        a{
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: var(--3);
+            &:last-child{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__name{
+        font-family: var(--second-family);
+        font-size: 3.5rem;
+        color: var(--1);
+        margin-bottom: 1rem;
+    }
+    &__inner{
+        display: flex;
+        gap: 3.8rem;
+    }
+    &__price{
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: var(--3);
+        display: flex;
+        gap: 1rem;
+        span{
+            font-size: 1.8rem;
+            text-decoration: line-through;
+            color: var(--4);
+        }
+    }
+    &__cart{
+        padding: 1.5rem 3.75rem;
+        background: var(--2);
+        border-radius: 1.5rem;
+        border: 1px solid var(--1);
+    }
+    &__dol{
+        font-size: 1.4rem;
+        line-height: 179%;
+        color: var(--7);
+        margin-bottom: 3.5rem;
+        span{
+            font-weight: 700;
+        } 
+    }
+    &__descr{
+        max-width: 48.7rem;
+        font-size: 1.5rem;
+        line-height: 167%;
+        color: var(--7);
+        margin-bottom: 3rem;
+    }
+    &__list{
+        font-size: 1.5rem;
+        line-height: 167%;
+        color: var(--7);
+        margin-bottom: 3rem;
+    }
+    &__actions{
+        display: flex;
+        gap: 3.5rem;
+    }
+    &__vid-top{
+        padding: 1.5rem 2.8rem;
+        border: 1px solid var(--1);
+        border-radius: 1.5rem;
+        color: var(--1);
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        svg{
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+    &__favorite{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5rem;
+        border: 1px solid var(--3);
+        margin-bottom: 2.5rem;
+        svg{
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+    &__gift{
+        display: flex;
+        gap: 1rem;
+        color: var(--1);
+        border: 1px solid var(--1);
+        border-radius: 1.5rem;
+        padding: 1.5rem 2.3rem;
+        svg{
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
+
+.description{
+    margin-bottom: 4.3rem;
+    &__wrapper{
+        display: flex;
+        gap: 1.9rem;
+    }
+    &__item{
+        border: 1px solid rgba(73, 73, 73, 0.25);
+        border-radius: 1.5rem;
+        width: 58.8rem;
+        background: var(--5);
+        padding: 3.5rem;
+    }
+    &__item-title{
+        font-family: var(--second-family);
+        font-size: 3.5rem;
+        color: var(--1);
+        margin-bottom: 3.5rem;
+    }
+    &__item-text{
+        font-size: 1.5rem;
+        line-height: 167%;
+        color: var(--7);
+    }
+    &__item-link{
+        font-size: 1.5rem;
+        line-height: 167%;
+        color: var(--7);
+        margin-top: 3rem;
+        font-weight: 700;
+        text-decoration: underline !important;
+    }
+
+}
+
+.dop{
+    margin-bottom: 7.5rem;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.likeit-product{
+    margin-bottom: 17rem;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}

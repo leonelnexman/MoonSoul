@@ -1,0 +1,47 @@
+.modal{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7777;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s;
+    }
+    .contacts__form-title{
+        @media (max-width: 962px) {
+            font-size: 4rem;
+        }
+    }
+    &__close{
+        position: absolute;
+        top: 7rem;
+        right: 7rem;
+        cursor: pointer;
+        svg{
+            width: 3.4rem;
+            height: 3.4rem;
+            @media (max-width: 962px) {
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+            path{
+                stroke: var(--3);
+            }
+        }
+    }
+    .contacts__policy{
+        @media (max-width: 962px) {
+            font-size: 2.5rem;
+        }
+    }
+}

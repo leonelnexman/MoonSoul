@@ -1,0 +1,238 @@
+.about-section{
+    height: 73.8rem;
+    background: url('../images/aboutbg.jpg');
+    background-size: cover;
+    padding-top: 18.3rem;
+    &__subtitle{
+        font-family: var(--second-family);      
+        font-size: 5.5rem;
+        text-align: center;
+        color: var(--5);
+        margin-bottom: 5rem;
+    }
+    &__logo{
+        display: block;
+        width: 66.8rem;
+        height: 12.7rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    &__descr{
+        font-family: var(--second-family);
+        font-size: 3rem;
+        text-align: center;
+        color: var(--5);
+    }
+}
+
+.founder{
+    position: relative;
+    padding-top: 19rem;
+    margin-bottom: 15rem;
+    &__dec{
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        z-index: -1;
+        svg{
+            width: 43.6rem;
+            height: 57.7rem;
+        }
+    }
+    &__bgv{
+        position: absolute;
+        top: 15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5.4rem;
+        width: 55.3rem;
+        height: 10.7rem;
+        border: 1px solid rgba(73, 73, 73, 0.25);
+        background: var(--5);
+        &::before{
+            content: '';
+            position: absolute;
+            left: -5rem;
+            width: 120%;
+            bottom: -3.5rem;
+            height: 10rem;
+            background:#fff;
+            z-index: 777;
+        }
+    }
+    &__img{
+        width: 29.9rem;
+        height: 27.6rem;
+        display: block;
+        margin: auto;
+        position: relative;
+        margin-top: -11rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 25px 0 rgba(200, 44, 135, 0.25);
+    }
+    &__wrapper{
+        background: #fff;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(73, 73, 73, 0.25);
+        padding-bottom: 4.3rem;
+    }
+    &__title{
+        font-family: var(--second-family);
+        font-size: 5.5rem;
+        text-align: center;
+        color: var(--1);
+        margin-bottom: 2rem;
+    }
+    &__descr{
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin: auto;
+        text-align: center;
+        color: #000;
+        max-width: 103.7rem;
+        margin-bottom: 3rem;
+    }
+    &__podp{
+        font-size: 1.5rem;
+        line-height: 167%;
+        color: var(--7);
+        text-align: center;
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+.story{
+    &__book-titlee{
+        font-family: var(--second-family);
+       font-size: 4.5rem;   
+       color: var(--1);
+       margin-bottom: 2.3rem;
+    }
+    &__book-content-about{
+        p{
+            font-size: 1.7rem;
+            color: var(--7);
+            margin-bottom: 2.5rem;
+            max-width: 54.9rem;
+        }
+        .pink{
+            color: var(--3);
+        }
+        .green{
+            color: var(--1);
+        }
+    }
+}
+
+.values{
+    position: relative;
+    padding-top: 20rem;
+    margin-bottom: 17.5rem;
+    &__title{
+        font-family: var(--second-family);
+        font-size: 7.5rem;
+        color: var(--1);
+        right: 33.1rem;
+        margin-left: 93.9rem;
+        margin-bottom: 5.3rem;
+    }
+    &__wrapper{
+        display: flex;
+        gap: 2.5rem;
+        padding: 15.6rem 13.3rem 8.5rem;
+        background: url('../images/values.jpg');
+        background-size: cover;
+    }
+    &__main{
+        position: absolute;
+        left: 33.1rem;
+        top: 10rem;
+        width: 48.7rem;  
+        svg{
+            width: 9rem !important;
+            height: 9rem !important;
+        }
+        .values__item-btn{
+            width: 100%;
+            padding: 1.5rem;
+            color: var(--5);
+            margin-top: 2.5rem;
+            display: block !important;
+            border-radius: 1.5rem;
+            background: var(--1);
+        }
+        .values__item-text{
+            font-size: 1.5rem !important;
+        }
+    }
+    &__item{
+        width: 39.7rem; 
+        border: 1px solid rgba(73, 73, 73, 0.25);
+        border-radius: 1.5rem;
+        background: var(--4);
+        padding: 3rem;
+        svg{
+          width: 5.3rem;
+          height: 5.3rem; 
+          margin-bottom: 1.3rem;
+        }
+        .values__item-btn{
+            display: none;
+        }
+    }
+    &__item-title{
+        font-family: var(--second-family);
+        font-size: 2.6rem;
+        color: var(--1);
+        margin-bottom: 1rem;
+    }
+    &__item-text{
+        font-size: 1.1rem;
+        line-height: 167%;
+        color: var(--7);
+    }
+}
+
+.about-categories{
+    position: relative;
+    &__dec1{
+        position: absolute;
+        left: 0;
+        top: -1rem;
+        &.visible{
+            svg path{
+                stroke: var(--1) !important;
+            }
+        }
+        svg{
+            width: 37.2rem;
+            height: 41rem;
+        }
+    }
+    &__dec2{
+        position: absolute;
+        right: 0;
+        top: -15rem;
+        &.visible{
+            svg path{
+                stroke: var(--1) !important;
+            }
+        }
+        svg{
+            width: 37.2rem;
+            height: 41rem;
+        }
+    }
+    margin-bottom: 17rem;
+    .categories{
+        gap: 26.3rem;
+        svg path{
+            fill: var(--1);
+        }
+        &__name{
+            color: var(--1);
+        }
+    }
+}
