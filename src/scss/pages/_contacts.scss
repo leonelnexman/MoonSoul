@@ -9,9 +9,9 @@
 
 .conctact{
     margin-bottom: 7.5rem;
-    &__title{
-
-    }
+    @media (max-width: 962px){
+       margin-bottom: 1.5rem;
+     }
     &__top{
         display: flex;
         align-items: center;
@@ -21,20 +21,41 @@
         border-radius: 1.5rem;
         background: #fff;
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: transparent;
+            border: none;
+            padding: 0;
+            gap: 1.9rem 0;
+        }
     }
     &__wrapper{
         display: flex;
         gap: 4.2rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__tel{
         display: flex;
-        gap: 1rem;
+        gap: 0.7rem;
         align-items: center;
         font-size: 1.5rem;
         line-height: 167%;
         color: var(--7);
+        @media (max-width: 962px){
+            border: 0.75px solid rgba(73, 73, 73, 0.25);
+            border-radius: 1.1rem;
+            padding: 1.3rem 1.9rem;
+            background: var(--5);
+            font-size: 1.1rem;
+        }
         svg{
             height: 3.8rem;
+            @media (max-width: 962px){
+                height: 2.7rem;
+            }
         }
     }
     &__socials{
@@ -42,10 +63,30 @@
         align-items: center;
         margin-left: auto;
         gap: 3.2rem;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+            margin-left: 0;
+            border: 0.75px solid rgba(73, 73, 73, 0.25);
+            border-radius: 1.1rem;
+            background: var(--5);
+            padding: 1.5rem 3.5rem 2.5rem;
+            gap: 2.5rem;
+            p{
+                text-align: center;
+                width: 100%;
+            }
+        }
         a{
+            &:nth-child(5) svg path{
+                fill: var(--1);
+            }
             svg{
                 width: 3.75rem;
                 height: 3.75rem;
+                @media (max-width: 962px){
+                    width: 2.7rem;
+                    height: 2.7rem;
+                }
             }
         }
     }
@@ -55,6 +96,12 @@
         line-height: 167%;
         color: var(--7);
         margin-bottom: 3rem;
+        @media (max-width: 962px){
+            width: 100%;
+            font-size: 0.9rem;
+            margin-bottom: 0rem;
+            text-align: center;
+        }
     }
     &__text{
         font-size: 1.5rem;
@@ -66,11 +113,28 @@
         border-radius: 1.5rem;
         padding: 2.4rem 6.2rem 4.1rem;
         background: var(--5);
+        &:nth-child(2){
+            .conctact__text{
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 962px){
+            width: 100%;
+            padding: 1.7rem 5.5rem;
+        }
     }
     &__text{
         display: flex;
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 0.5rem;
+        @media (max-width: 962px){
+            flex-direction: row;
+            gap: 0.5rem;
+            justify-content: center;
+            p{
+                font-size: 0.9rem;  
+            }
+        }
     }
     &__item-inp{
         font-size: 1.4rem;
@@ -79,9 +143,17 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            white-space: nowrap;
+        }
         input{
             width: 1.8rem;
             height: 1.8rem;
+            @media (max-width: 962px){
+                width: 1.35rem;
+                height: 1.35rem;
+            }
         }
     }
     &__titlen{
@@ -90,13 +162,23 @@
         text-align: center;
         color: var(--1);
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            font-size: 2.1rem;
+        }
     }
     &__map{
-        width: 95.3rem;
+        width: 95.9rem;
+        @media (max-width: 962px){
+            width: 121%;
+            margin-left: -3.5rem;
+         }
         iframe{
             width: 100%;
             border: 1px solid rgba(73, 73, 73, 0.25);
             border-radius: 1.5rem;
+            @media (max-width: 962px){
+               height: 30rem;
+            }
         }
     }
     &__info{
@@ -104,51 +186,99 @@
         display: flex;
         flex-direction: column;
         gap: 3.5rem;
+        @media (max-width: 962px){
+            width: 100%;
+        }
 
     }
 }
 
 .route{
     margin-bottom: 7.5rem;
+    @media (max-width: 962px){
+        margin-bottom: 3rem;
+      }
     &__title{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 4.5rem;
+        @media (max-width: 962px){
+            font-size: 2.1rem;
+            text-align: center;
+          }
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__item{
         width: 45rem;
+        @media (max-width: 962px){
+           width: 100%;
+        }
         img{
-            margin-bottom: 1.6rem;
+            width: 100%;
+            margin-bottom: 2.3rem;
+            @media (max-width: 962px){
+                width: 100%;
+             }
         }
         p{
             text-align: center;
+            @media (max-width: 962px){
+               display: none;
+             }
         }
     }
 }
 
 .parking{
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     &__title{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            order: 0;
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+          }
     }
     &__descr{
         font-size: 1.5rem;
         line-height: 167%;
         color: var(--7);
         margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            text-align: center;
+            font-size: 0.9rem;
+            order: 1;
+          }
     }
     &__map{
+        @media (max-width: 962px){
+            order: 3;
+            width: 119%;
+            margin-left: -3rem;
+            margin-bottom: 8.5rem;
+        }
         iframe{
             height: 60rem;
             border: 1px solid rgba(73, 73, 73, 0.25);
             border-radius: 1.5rem;
+            @media (max-width: 962px){
+                width: 100%;
+                height: 30rem;
+            }
         }
     }
     &__inner{
@@ -156,13 +286,25 @@
         justify-content: space-between;
         margin-top: 3.5rem;
         margin-bottom: 7.5rem;
+        @media (max-width: 962px){
+            order: 2;
+            flex-direction: column;
+            gap: 2.3rem;
+        }
     }
     &__item{
         width: 69.7rem;
+        @media (max-width: 962px){
+           width: 100%;
+           height: 19.5rem;
+        }
         img{
             width: 100%;
-            height: 35rem;
             margin-bottom: 3.5rem;
+            @media (max-width: 962px){
+                width: 100%;
+                height: 19.5rem;
+             }
         }
     }
     &__name{
@@ -171,6 +313,9 @@
         line-height: 167%;
         color: var(--7);
         margin-bottom: 0.7rem;
+        @media (max-width: 962px){
+            display: none;
+         }
     }
 }
 
@@ -182,17 +327,33 @@
         font-size: 5.5rem;
         color: var(--1);
         margin-bottom: 4.5rem;
+        @media (max-width: 962px){
+            font-size: 2.1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__info{
         width: 68.7rem;
+        @media (max-width: 962px){
+            width: 100%;
+            margin-bottom: 1.6rem;
+        }
     }
     &__photo{
         width: 68.7rem;
         height: 38.7rem;
+        @media (max-width: 962px){
+            width: 100%;
+            height: 19.5rem;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -207,6 +368,9 @@
             font-size: 1.5rem;
             line-height: 167%;
             color: var(--7);
+            @media (max-width: 962px){
+               font-size: 1rem;
+            }
             span{
                 font-weight: 700;
                 color: var(--1);

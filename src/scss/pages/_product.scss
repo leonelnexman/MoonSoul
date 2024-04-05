@@ -34,6 +34,9 @@
     .width-container{
         .container{
             width: 119.6rem;
+            @media (max-width: 962px){
+                width: 100%;
+             }
         }
     }
     .marquee{
@@ -46,10 +49,21 @@
         border: 1px solid rgba(73, 73, 73, 0.25);
         border-radius: 1.5rem;
         background: var(--5);
+        @media (max-width: 962px){
+            flex-direction: column;
+            background: transparent;
+            border: none;
+            gap: 0;
+         }
     }
     &__img{
         width: 53.9rem;
         height: 82.3rem;
+        @media (max-width: 962px){
+           width: 100%;
+           height: auto;
+           border-radius: 1.5rem;
+        }
         .swiper {
             width: 100%;
             height: 100%;
@@ -62,6 +76,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: 962px){
+                border-radius: 1.5rem 1.5rem 0 0;
+             }
           }
       
           .swiper-slide img {
@@ -69,6 +86,7 @@
             width: 25rem;
             height: 25rem;
             object-fit: cover;
+            
           }
       
           body {
@@ -89,16 +107,26 @@
             display: flex;
             justify-content: center;
             cursor: pointer;
+            @media (max-width: 962px){
+                border-radius: 0;
+             }
           }
       
           .mySwiper2 {
             border-radius: 1.5rem 0 0 0;
             width: 53.9rem;
             height: 65.9rem;
+            @media (max-width: 962px){
+                width: 100%;
+                height: 48rem;
+            }
             .swiper-slide{
                 background: #fff;
                 border-bottom: 1px solid rgba(73, 73, 73, 0.25);
                 border-right: 1px solid rgba(73, 73, 73, 0.25);
+                @media (max-width: 962px){
+                    border-radius: 1.5rem 1.5rem 0 0;
+                }
             }
           }
       
@@ -106,10 +134,16 @@
             height: 20%;
             box-sizing: border-box;
             border-radius: 0 0 0 1.5rem;
+            @media (max-width: 962px){
+                border-radius: 0 0 1.5rem 1.5rem;
+            }
             .swiper-slide{
                 background: #fff;
                 border-bottom: 0.1rem solid rgba(73, 73, 73, 0.25);
                 border-right: 0.1rem solid rgba(73, 73, 73, 0.25);
+                @media (max-width: 962px){
+                    height: 13rem !important;
+                 }
             }
             .swiper-slide img {
                 display: block;
@@ -126,12 +160,23 @@
     }
     &__info{
         padding-top: 6.1rem;
+        @media (max-width: 962px){
+            margin-top: 1.1rem;
+            padding: 1.9rem 3rem;
+            width: 100%;
+            border: 0.64px solid rgba(73, 73, 73, 0.25);
+            border-radius: 1rem;
+            background: var(--5);
+         }
     }
     .breadcrambs{
         display: flex;
         align-items: center;
         gap: 0.5rem;
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            display: none;
+         }
         a{
             font-weight: 400;
             font-size: 1.6rem;
@@ -148,10 +193,17 @@
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 1rem;
+        @media (max-width: 962px){
+            font-size: 2rem;
+            color: var(--1);
+        }
     }
     &__inner{
         display: flex;
         gap: 3.8rem;
+        @media (max-width: 962px){
+            gap: 2.3rem;
+        }
     }
     &__price{
         font-size: 3.5rem;
@@ -159,10 +211,17 @@
         color: var(--3);
         display: flex;
         gap: 1rem;
+        @media (max-width: 962px){
+            font-size: 2.2rem;
+            white-space: nowrap;
+        }
         span{
             font-size: 1.8rem;
             text-decoration: line-through;
             color: var(--4);
+            @media (max-width: 962px){
+                font-size: 1.1rem
+            }
         }
     }
     &__cart{
@@ -170,12 +229,22 @@
         background: var(--2);
         border-radius: 1.5rem;
         border: 1px solid var(--1);
+        @media (max-width: 962px){
+            gap: 2.3rem;
+            padding: 0.9rem 2.3rem;
+            white-space: nowrap;
+            border-radius: 1rem;
+            font-size: 1rem;
+        }
     }
     &__dol{
         font-size: 1.4rem;
         line-height: 179%;
         color: var(--7);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            font-size: 0.9rem;
+        }
         span{
             font-weight: 700;
         } 
@@ -186,16 +255,29 @@
         line-height: 167%;
         color: var(--7);
         margin-bottom: 3rem;
+        @media (max-width: 962px){
+            font-size: 1rem;
+            max-width: 100%;
+            margin-bottom: 1.5rem;
+        }
     }
     &__list{
         font-size: 1.5rem;
         line-height: 167%;
         color: var(--7);
         margin-bottom: 3rem;
+        @media (max-width: 962px){
+            font-size: 1rem;
+            max-width: 100%;
+            margin-bottom: 1.5rem;
+        }
     }
     &__actions{
         display: flex;
         gap: 3.5rem;
+        @media (max-width: 962px){
+            gap: 2.3rem;
+         }
     }
     &__vid-top{
         padding: 1.5rem 2.8rem;
@@ -205,9 +287,18 @@
         display: flex;
         gap: 1rem;
         cursor: pointer;
+        @media (max-width: 962px){
+            font-size: 1rem;
+            padding: 0.9rem 2rem;
+            border-radius: 1rem;
+        }
         svg{
             width: 1.8rem;
             height: 1.8rem;
+            @media (max-width: 962px){
+               width: 1.1rem;
+               height: 1.1rem;
+            }
         }
     }
     &__favorite{
@@ -219,9 +310,18 @@
         border-radius: 1.5rem;
         border: 1px solid var(--3);
         margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            width: 3.3rem;
+            height: 3.3rem;
+            border-radius: 1rem;
+         }
         svg{
             width: 1.8rem;
             height: 1.8rem;
+            @media (max-width: 962px){
+                width: 0.9rem;
+                height: 0.9rem;
+             }
         }
     }
     &__gift{
@@ -231,9 +331,18 @@
         border: 1px solid var(--1);
         border-radius: 1.5rem;
         padding: 1.5rem 2.3rem;
+        @media (max-width: 962px){
+            font-size: 1rem;
+            padding: 0.9rem 1.5rem;
+            border-radius: 1rem;
+         }
         svg{
             width: 1.8rem;
             height: 1.8rem;
+            @media (max-width: 962px){
+                width: 1.2rem;
+                height: 1.2rem;
+             }
         }
     }
 }
@@ -243,6 +352,10 @@
     &__wrapper{
         display: flex;
         gap: 1.9rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            width: 100%;
+         }
     }
     &__item{
         border: 1px solid rgba(73, 73, 73, 0.25);
@@ -250,17 +363,28 @@
         width: 58.8rem;
         background: var(--5);
         padding: 3.5rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            width: 100%;
+         }
     }
     &__item-title{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            font-size: 2rem;
+            margin-bottom: 2.7rem;
+         }
     }
     &__item-text{
         font-size: 1.5rem;
         line-height: 167%;
         color: var(--7);
+        @media (max-width: 962px){
+            font-size: 1rem;
+         }
     }
     &__item-link{
         font-size: 1.5rem;
@@ -269,6 +393,9 @@
         margin-top: 3rem;
         font-weight: 700;
         text-decoration: underline !important;
+        @media (max-width: 962px){
+            font-size: 1rem;
+         }
     }
 
 }
@@ -278,12 +405,35 @@
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+            gap: 1.9rem;
+         }
+    }
+    .catalog__item-img{
+        @media (max-width: 962px){
+            width: 17.5rem;
+            height: 17.5rem;
+        }
     }
 }
 .likeit-product{
     margin-bottom: 17rem;
+    @media (max-width: 962px){
+        margin-bottom: 7rem;
+     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+            gap: 1.9rem;
+         }
+    }
+    .catalog__item-img{
+        @media (max-width: 962px){
+            width: 17.5rem;
+            height: 17.5rem;
+         }
     }
 }

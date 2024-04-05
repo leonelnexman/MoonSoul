@@ -6,17 +6,41 @@ export class SwiperInit {
           slidesPerView: 1,
           spaceBetween: 0, 
           initialSlide: 0,
-          autoplay: { 
-            delay: 7000, 
-            disableOnInteraction: false,
-          },
+          // autoplay: { 
+          //   delay: 7000, 
+          //   disableOnInteraction: false,
+          // },
           speed: 1100,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
           },
+          on: {
+            slideChange: function () {
+              // Получаем текущий активный слайд
+              const activeSlide = this.slides[this.activeIndex];
+              
+              // Получаем все видео в текущем слайде
+              const videos = activeSlide.querySelectorAll('video');
+      
+              // Проходимся по всем найденным видео и запускаем их воспроизведение
+              videos.forEach(video => {
+                video.play();
+              });
+      
+              // Проверяем, является ли текущий слайд третьим или шестым
+              if (this.activeIndex === 2 || this.activeIndex === 5) {
+                // Добавляем класс "green-header" к элементу с классом "header"
+                document.querySelector('.header').classList.add('green-header');
+              } else {
+                // Если текущий слайд не третий или шестой, удаляем класс "green-header" из элемента с классом "header"
+                document.querySelector('.header').classList.remove('green-header');
+              }
+            }
+          }
         });
       }
+      
 
 
       if (document.querySelector('.ready-sets__slider')) {

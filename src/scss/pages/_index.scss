@@ -7,14 +7,216 @@
     .swiper-slide{
         position: relative;
         @media (max-width: 962px){
+            display: none;
             &:nth-child(1){
-                display: none;
+                display: block;
             }
          }
         video{
             width: 100%;
             height: 100vh;
             object-fit: cover;
+        }
+        &:nth-child(3){
+            img{
+                width: 100vw;
+                height: 100vh;
+            }
+            .slide-inner{
+                position: absolute;
+                top: 10.7rem;
+                left: 0;
+                width: 100%;
+                &__title{
+                    margin-left: 54.8rem;
+                    font-family: var(--second-family);
+                    font-size: 11.2rem;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: var(--3);
+                    line-height: 70%;
+                    span{
+                        font-size: 9.6rem;
+                        color: var(--1);
+                    }
+                }
+                &__suptitle{
+                    margin-left: 54.8rem;
+                    font-family: var(--second-family);
+                    font-size: 7.1rem;
+                    text-transform: lowercase;
+                    color: var(--1);
+                    margin-bottom: 3.5rem;
+                }
+                &__btn{
+                    display: block;
+                    font-size: 1.6rem;
+                    color: var(--5);
+                    width: 25.2rem;
+                    padding: 1.5rem;
+                    border-radius: 1.5rem;
+                    background: var(--1);
+                    margin: auto;
+                    margin-bottom: 4.7rem;
+                }
+                &__wrapper{
+                    display: flex;
+                    gap: 3rem;
+                    justify-content: center;
+                    img{
+                        border: 1px solid rgba(73, 73, 73, 0.05);
+                        border-radius: 1.5rem;
+                        width: 42.4rem;
+                        height: 39.7rem;
+                        margin-bottom: 0.9rem;
+                    }
+                }
+                &__img-name{
+                    font-family: var(--second-family);
+                    font-size: 3.5rem;
+                    text-align: center;
+                    color: var(--1);
+                    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        &:nth-child(4){
+            img{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+            .link__pearl{
+                position: absolute;
+                left: 27rem;
+                bottom: -1.5rem;
+                img{
+                    width: 62rem;
+                    height: 43.8rem;
+                }
+            }
+            .slide-inner{
+                position: absolute;
+                top: 26.8rem;
+                left: 0;
+                width: 100%;
+                &__logo{
+                    margin-bottom: 2.5rem;
+                    img{
+                        display: block;
+                        margin: auto;
+                        width: 48.8rem;
+                        height: 21.3rem;
+                    }
+                }
+                &__title{
+                    font-weight: 500;
+                    font-size: 3.5rem;
+                    color: var(--5);
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                &__suptitle{
+                    font-size: 2rem;
+                    color: var(--5);
+                    text-align: center;
+                    margin-bottom: 4rem;
+                }
+                &__btn{
+                    display: block;
+                    margin: auto;
+                    color: var(--3);
+                    width: 25.2rem;
+                    padding: 1.5rem;
+                    border-radius: 1.5rem;
+                    background: var(--2);
+                }
+            }
+        }
+        &:nth-child(5){
+            img{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+            .slide-inner{
+                position: absolute;
+                top: 13rem;
+                left: 0;
+                width: 100%;
+                &__title{
+                    text-align: center;
+                    font-family: var(--second-family);
+                    font-size: 11.9rem;
+                    color: var(--5);
+                    margin-bottom: 3rem;
+                }
+                .marquee{
+                    background: rgba(130, 136, 96, 0.78);
+                    padding-bottom: 3rem;
+                }
+            }
+            .catalog__item-img{
+                height: 40.7rem;
+                width: 29.1rem;
+                background: transparent;
+                img{
+                    height: 29.1rem;
+                }
+            }
+            .marquee__bl{
+                padding: 0;
+            }
+            .recomendations__title{
+                display: none;
+            }
+            .catalog__item-name{
+                color: #fff;
+            }
+            .catalog__item-price{
+                color: #fff;
+                border-color: #fff;
+            }
+            .catalog__item-inner{
+                border-color: #fff;
+            }
+            .catalog__item-actions svg path{
+                stroke: #fff;
+            }
+        }
+        &:nth-child(6){
+            img{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+            .slide-inner{
+                position: absolute;
+                top: 14.9rem;
+                left: 0;
+                width: 100%;
+                &__logo{
+                    margin-left: 24rem;
+                    margin-bottom: 3.5rem;
+                    img{
+                        width: 48.6rem;
+                        height: 20.9rem;
+                    }
+                }
+                &__title{
+                    font-family: var(--second-family);
+                    font-size: 4.5rem;
+                    color: var(--6);
+                    margin-bottom: 2rem;
+                    margin-left: 24rem;
+                }
+                &__text{
+                    font-size: 2rem;
+                    color: var(--6);
+                    margin-left: 24rem;
+                    max-width: 49.2rem;
+                }
+            }
         }
     }
     &__slide-main{
@@ -79,13 +281,15 @@
     &__content{
         position: relative;
         z-index: 77;
-        display: flex;
-        flex-direction: column;
         width: 100%;
         align-items: center;
         padding-top: 30rem;
+        padding-left: 114.5rem;
         @media (max-width: 962px){
+            display: flex;
+            flex-direction: column;
             padding-top: 19.8rem;
+            padding-left: 0;
         }
     }
     &__logo{
@@ -113,14 +317,36 @@
     }
     &__text{
         font-size: 2rem;
-        text-align: center;
         color: var(--5);
         max-width: 49.2rem;
         @media (max-width: 962px){
             font-size: 1.2rem;
             color: var(--5);
             max-width: 29.5rem;
-            text-align: left;
+        }
+    }
+    .swiper-pagination{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5rem;
+        z-index: 7777777777777777777777777777;
+        display: flex;
+        gap: 2.5rem;
+    }
+    .swiper-pagination-bullet{
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background: #000;
+        opacity: 0.5;
+        border-radius: 50%;
+        transition: all 0.3s;
+        cursor: pointer;
+        &.swiper-pagination-bullet-active{
+            background: var(--1);
+            transition: all 0.3s;
+            opacity: 1;
         }
     }
 }
@@ -459,6 +685,7 @@
         .catalog__item-img{
             width: 18rem;
             height: 23.7rem;
+            background-color: #fff;
         }
         .catalog__item-price{
             font-size: 1rem;
@@ -964,6 +1191,11 @@
         @media (max-width: 962px){
             gap: 1.9rem;
         }
+        a:nth-child(4){
+            svg path{
+                fill: var(--3);
+            }
+        }
         svg{
             width: 3.75rem;
             height: 3.75rem;
@@ -985,6 +1217,7 @@
         background: var(--2);
         padding: 5rem 17.5rem 7.5rem 19.9rem;
         border-radius: 2.5rem;
+        overflow: hidden;
         @media (max-width: 962px){
             padding: 3.7rem 5rem 4.1rem;
             overflow: hidden;

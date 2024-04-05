@@ -87,6 +87,16 @@
             width: 2rem;
             height: 2rem;
         }
+        svg:nth-child(4) path{
+            fill: #494949;
+        }
+    }
+    &__social-link{
+        &:nth-child(4){
+            svg path{
+                fill: #494949;
+            }
+        }
     }
     &__actions{
         max-width: 33.4rem;

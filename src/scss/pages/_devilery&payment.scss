@@ -6,6 +6,9 @@
         line-height: 167%;
         color: var(--7);
         margin-bottom: 7rem;
+        @media (max-width: 962px){
+            margin-bottom: 1.5rem;
+         }
     }
     &__block{
         position: relative;
@@ -13,9 +16,18 @@
     img{
         width: 100%;
         height: 34.7rem;
+        @media (max-width: 962px){
+            height: 21.7rem;
+        }
     }
     &__block{
         margin-bottom: 2.9rem;
+        @media (max-width: 962px){
+            width: 100%;
+            img{
+                display: none;
+            }
+         }
     }
     &__block-inner{
         position: absolute;
@@ -23,24 +35,62 @@
         left: 8.2rem;
         display: flex;
         gap: 10rem;
+        @media (max-width: 962px){
+            margin-bottom: 1.5rem;
+            left: 3rem;
+            flex-direction: column;
+            display: block;
+            position: static;
+         }
     }
     &__block-name{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            margin-bottom: 1.5rem;
+            left: 3rem;
+            font-size: 2.1rem;
+            margin-bottom: 0.7rem;
+            
+         }
     }
     &__company{
         margin-bottom: 2rem;
+        @media (max-width: 962px){
+            max-width: 31.4rem;
+         }
     }
     &__company-name{
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 167%;
         color: var(--7);
+        @media (max-width: 962px){
+            font-size: 1.3rem;
+         }
     }
     &__block-item{
         width: 62.7rem;
+        img{
+            display: none;
+        }
+        @media (max-width: 962px){
+            width: 100%;
+            padding: 1.5rem 3rem 1.5rem;
+            position: relative;
+            margin-bottom: 1.9rem;
+            img{
+                display: block;
+                width: 100%;
+                top: 0rem;
+                left: 0rem;
+                position: absolute;
+                z-index: -1;
+                height: 95%;
+            }
+         }
         &:nth-child(2){
             .deliver{
                 margin: 0;
@@ -50,21 +100,33 @@
             font-size: 1.5rem;
             line-height: 167%;
             color: var(--7);
+            @media (max-width: 962px){
+                font-size: 1rem;
+             }
             span{
                 color: var(--3);
             }
         }
         .deliver{
             margin: 2.1rem 0 2.1rem;
+            @media (max-width: 962px){
+                margin: 1rem 0;
+            }
         }
     }
 }
 
 .delivery-info{
     margin-bottom: 15.1rem;
+    @media (max-width: 962px){
+        margin-bottom: 5.5rem;
+    }
     &__wrapper{
         display: flex;
         gap: 2.1rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__note{
         max-width: 71rem;
@@ -74,15 +136,25 @@
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+        }
     }
     &__note-inner{
         display: flex;
         flex-direction: column;
         gap: 1.7rem;
+        @media (max-width: 962px){
+            gap: 1rem;
+        }
         p{
             font-size: 1.5rem;
             line-height: 167%;
             color: #000;
+            @media (max-width: 962px){
+                font-size: 1rem;
+            }
         }
     }
     &__pickup-title{
@@ -90,6 +162,10 @@
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+        }
     }
     &__adress{
         font-size: 1.5rem;
@@ -104,7 +180,7 @@
                 margin-top: 2rem;
             }
             font-weight: 400;
-            margin: 1rem 0;
+            margin: 2rem 0;
             &.bold{
                 font-weight: 700;
             }
@@ -125,11 +201,21 @@
         margin-top: 3rem;
         padding: 2.1rem 9.9rem;
         background: var(--1);
+        @media (max-width: 962px){
+            font-size: 1rem;
+            width: 17.3rem;
+            padding: 1.05rem;
+            border-radius: 0.7rem;
+            margin-top: 1rem;
+        }
     }
 }
 
 .payment{
     margin-bottom: 16rem;
+    @media (max-width: 962px){
+        margin-bottom: 7rem;
+    }
     &__descr{
         font-size: 1.5rem;
         font-weight: 700;
@@ -142,23 +228,44 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 0rem 1.8rem;
+        @media (max-width: 962px){
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__method{
         position: relative;
         width: 78.6rem;
+        @media (max-width: 962px){
+            width: 100%;
+        }
        &:nth-child(1){
             height: 27.8rem;
             grid-area: 1 / 1 / 2 / 2;
+            @media (max-width: 962px){
+                height: auto;
+                margin-bottom: 1.5rem;
+            }
             img{
                 width: 100%;
                 height: 27.7rem;
+                @media (max-width: 962px){
+                    height: 13rem;
+                }
             }
        }
        &:nth-child(2){
-        grid-area: 2 / 1 / 3 / 2;;
+        grid-area: 2 / 1 / 3 / 2;
+        @media (max-width: 962px){
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
         img{
             width: 100%;
             height: 34.9rem;
+            @media (max-width: 962px){
+                height: 25rem;
+            }
         }
         .payment__content{
             top: 3.5rem;
@@ -169,6 +276,9 @@
         img{
             width: 100%;
             height: 100%;
+            @media (max-width: 962px){
+                height: 35rem;
+            }
         }
         }
     }
@@ -180,10 +290,20 @@
         flex-direction: column;
         gap: 2.5rem;
         max-width: 62.7rem;
+        @media (max-width: 962px){
+            top: 3.1rem;
+            left: 3rem;
+            max-width: 100%;
+            gap: 0.7rem;
+            max-width: 31.4rem;
+        }
         p{
             font-size: 1.5rem;
             line-height: 167%;
             color: var(--7);
+            @media (max-width: 962px){
+                font-size: 0.9rem;
+            }
             span{
                 font-weight: 700;
             }
@@ -205,5 +325,11 @@
         border-radius: 1.5rem;
         padding: 2.1rem 9.9rem;
         background: var(--1);
+        @media (max-width: 962px){
+            font-size: 1rem;
+            width: 17.3rem;
+            padding: 1.05rem;
+            border-radius: 0.7rem;
+        }
     }
 }

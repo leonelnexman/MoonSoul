@@ -274,6 +274,34 @@ li{
     background: transparent !important;
 }
 
+.catalog__item-name{
+    @media (max-width: 962px){
+        font-size: 0.9rem !important;
+    }
+}
+.catalog__item-price{
+    @media (max-width: 962px){
+        font-size: 1rem !important;
+    }
+}
+.catalog__item-actions{
+    @media (max-width: 962px){
+        padding-top: 0.3rem !important;
+    }
+}
+.catalog__item-inner{
+    @media (max-width: 962px){
+        width: 10.5rem !important;
+    }
+}
+
+.catalog__item-actions svg{
+    @media (max-width: 962px){
+        width: 1.1rem !important;
+        height: 1.1rem !important;
+    }
+}
+
 
 
 

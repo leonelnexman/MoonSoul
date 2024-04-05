@@ -16,6 +16,24 @@ const ButtonsInstance = new buttons();
 const CheckboxInstance = new filters();
 const TabsInstance = new tabs();
 
+document.addEventListener('DOMContentLoaded', function() {
+    const headerMain = document.querySelector('.header-main');
+
+    setTimeout(function() {
+        headerMain.style.opacity = '1';
+        headerMain.style.visibility = 'visible';
+    }, 1700);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const headerMain = document.querySelector('.main-section__slide-main');
+
+    setTimeout(function() {
+        headerMain.style.opacity = '1';
+        headerMain.style.visibility = 'visible';
+    }, 1700);
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var faqItems = document.querySelectorAll('.faq__item');

@@ -1,19 +1,32 @@
 .order-page{
     margin-top: 15rem;
+    @media (max-width: 962px){
+        margin-top: 7rem;
+    }
 }
 .order{
     &__wrapper{
         display: flex;
         gap: 2.1rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__info{
         width: 33%;
+        @media (max-width: 962px){
+            width: 100%;
+        }
     }
     &__info-title{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.9rem;
+        @media (max-width: 962px){
+            font-size: 3rem;
+            margin-bottom: 1.9rem;
+        }
     }
     &__info-block{
         margin-bottom: 2.5rem;
@@ -42,12 +55,19 @@
     }
     &__services{
         width: 33%;
+        @media (max-width: 962px){
+            width: 100%;
+        }
     }
     &__services-title{
         font-family: var(--second-family);
         font-size: 3.5rem;
         color: var(--1);
         margin-bottom: 3.9rem;
+        @media (max-width: 962px){
+            font-size: 3rem;
+            margin-bottom: 1.9rem;
+        }
     }
     &__services-block{
         border-radius: 1.5rem;
@@ -67,6 +87,9 @@
         padding: 1.9rem 5.6rem;
         display: flex;
         border-bottom: 1px solid var(--4);
+        @media (max-width: 962px){
+            padding: 1.9rem;
+        }
         &:last-child{
             border: none;
         }
@@ -76,6 +99,9 @@
         color: var(--7);
         margin-right: 11.1rem;
         white-space: nowrap;
+        @media (max-width: 962px){
+            margin-right: auto;
+        }
         p{
             font-size: 1rem;
             color: var(--1);
@@ -108,6 +134,10 @@
     &__payment{
         width: 33%;
         padding-top: 7.5rem;
+        @media (max-width: 962px){
+            width: 100%;
+            padding-top: 0;
+        }
     }
     &__payment-top{
         font-size: 1.5rem;
@@ -130,6 +160,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 962px){
+            padding: 2.1rem;
+        }
         .order__services-checkbox{
             padding-top: 0;
         }
@@ -153,6 +186,9 @@
         background: var(--5);
         padding: 1.9rem 2.4rem 1.9rem 3rem;
         margin-bottom: 2rem;
+        @media (max-width: 962px){
+            width: 100%;
+        }
         .order__payment-promo-title{
             margin-bottom: 0.5rem;
         }
@@ -169,6 +205,9 @@
         border-radius: 1rem;
         background: var(--1);
         margin-bottom: 2.4rem;
+        @media (max-width: 962px){
+            padding: 2.1rem;
+        }
     }
     &__policy{
         display: flex;
@@ -197,6 +236,9 @@
         display: flex;
         gap: 6.9rem;
         margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            margin-top: 5rem;
+        }
         &.shipping{
             .order__free-shipping{
                 display: none;
@@ -223,17 +265,31 @@
         justify-content: center;
         gap: 7.1rem;
         padding: 2.4rem 6.7rem 2rem 6rem;
+        @media (max-width: 962px){
+            gap: 1rem;
+            padding: 2.1rem;
+        }
     }
     &__itogs-item-name{
         font-size: 1.5rem;
         color: var(--7);
+        @media (max-width: 962px){
+           font-size: 1rem;
+           white-space: nowrap;
+        }
     }
     &__itogs-item{
         p{
             font-size: 2.5rem;
             color: var(--7);
+            @media (max-width: 962px){
+                font-size: 1rem;
+             }
             span{
-                font-size: 1.5rem;  
+                font-size: 1.5rem; 
+                @media (max-width: 962px){
+                    font-size: 1rem;
+                 } 
             }
         }
     }
@@ -302,9 +358,20 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2.5rem 1.3rem;
+        @media (max-width: 962px){
+            margin-top: 3rem;
+        }
+    }
+    &__title{
+        @media (max-width: 962px){
+            margin-bottom: 0rem !important;
+        }
     }
     .catalog__item{
         width: 22.5rem;
+        @media (max-width: 962px){
+           width: 17.5rem;
+        }
     }
     .catalog__item-img{
         height: 16.8rem;
@@ -329,9 +396,22 @@
 
 .dont-forget-to-buy{
     margin-bottom: 17rem;
+    @media (max-width: 962px){
+        margin-bottom: 7rem;
+    }
     &__wrapper{
         display: flex;
         gap: 2rem;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+        }
+    }
+    .catalog__item-img{
+        @media (max-width: 962px){
+            width: 16.9rem;
+            height: 12.6rem;
+            background-color: #fff;
+        }
     }
 }
 
