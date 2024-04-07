@@ -12,11 +12,19 @@
     <link rel="icon" href="./images/favicon-192.png" type="image/png"sizes="192x192"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
+    <!-- <div class="cursor"></div>
+    <div class="cursor2"></div> -->
+    <div id="cursor"></div>
+    <div id="aura">
+        <span>Drag</span>
+        <span class="expand">Expand</span>
+    </div>
     <div class="wrapper">
         <header class="header header-main">
            <div class="header__actions">
@@ -137,7 +145,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <video src="./images/аркаулучшенная.mp4" muted></video>
+                            <video src="./images/arkaulucsennaia_RGtobgoC.mp4"></video>
                             <div class="main-section__slide-main">
                                 <img class="main-section__slide-logo" src="./images/slider-logo.svg" alt="">
                                 <div class="main-section__slide-bottom">
@@ -152,7 +160,6 @@
                             <div class="slide-inner">
                                 <div class="slide-inner__title">БЕСПЛАТНАЯ <br> <span>ДОСТАВКА ПОЧТОЙ</span></div>
                                 <div class="slide-inner__suptitle">ПРИ ЗАКАЗЕ ОТ 5000</div>
-                                <button class="slide-inner__btn">Перейти в каталог</button>
                                 <div class="slide-inner__wrapper">
                                     <a href="#" class="slide-inner__img-item">
                                         <img src="./images/s1.jpg" alt="" class="slide-inner__img">
@@ -167,6 +174,7 @@
                                         <div class="slide-inner__img-name">Серьги</div>
                                     </a>
                                 </div>
+                                <button class="slide-inner__btn">Перейти в каталог</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -341,12 +349,12 @@
            </section>
            <div class="pink-block">
             <div class="dec1 dec">
-                <svg width="372" height="410" viewBox="0 0 372 410" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M106 299C107.657 299 109 297.657 109 296C109 294.343 107.657 293 106 293C104.343 293 103 294.343 103 296C103 297.657 104.343 299 106 299Z" fill="#C83E7E" />
-                    <path d="M164.5 86C163.672 86 163 86.6716 163 87.5C163 88.3284 163.672 89 164.5 89C165.328 89 166 88.3284 166 87.5C166 86.6716 165.328 86 164.5 86Z" fill="#C83E7E" />
-                    <path d="M372 0.0736532C294.48 -0.929007 188.224 10.728 163.833 89.5719C156.54 113.723 158.586 139.025 158.935 163.786C160.351 200.728 157.228 240.416 132.255 271.297C108.009 302.223 69.1567 320.785 29.9944 332.477C3.62433 340.246 -23.6962 345.25 -51.2591 347.997C-51.6277 348.031 -51.9574 347.796 -51.9962 347.465C-52.035 347.133 -51.7731 346.837 -51.4046 346.802C-23.9289 344.117 3.33338 339.173 29.6258 331.474C68.6038 319.913 107.31 301.534 131.498 270.818C156.433 240.084 159.575 200.614 158.256 163.786C157.965 138.999 155.977 113.644 163.338 89.4412C187.962 10.4926 294.277 -1.07723 372 0.0736532Z" fill="#C83E7E" />
-                    <path d="M329 36C266.872 42.8568 176.674 55.6337 141.844 113.359C140.624 115.356 139.001 118.891 137.907 121.029C136.911 123.229 135.997 125.765 135.064 128.01C133.602 132.445 132.32 136.925 131.414 141.502C131.145 143.181 130.598 146.291 130.365 147.873C130.24 149.11 129.809 152.971 129.675 154.288C128.123 175.821 130.428 197.443 129.056 219.003C125.63 296.257 67.6 356.81 8.89735 401.944C5.55239 404.489 1.54382 407.467 -1.55901 409.817C-1.95359 410.118 -2.51855 410.038 -2.81449 409.649C-3.11939 409.261 -3.03868 408.704 -2.6441 408.412C1.49898 405.267 7.29213 401.078 11.2559 397.906C60.7846 359.275 108.905 311.163 123.783 248.736C129.163 226.293 128.769 203.063 128.294 180.142C128.132 168.7 128.114 156.956 129.926 145.629C134.508 115.268 152.076 92.7008 178.181 76.7253C223.172 48.8653 277.185 41.7257 328.991 36H329Z" fill="#C83E7E" />
-                </svg>
+                <svg width="424" height="410" viewBox="0 0 424 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M158 299C159.657 299 161 297.657 161 296C161 294.343 159.657 293 158 293C156.343 293 155 294.343 155 296C155 297.657 156.343 299 158 299Z" fill="#AE417C" />
+                    <path d="M216.5 86C215.672 86 215 86.6716 215 87.5C215 88.3284 215.672 89 216.5 89C217.328 89 218 88.3284 218 87.5C218 86.6716 217.328 86 216.5 86Z" fill="#AE417C" />
+                    <path d="M424 0.0736532C346.48 -0.929007 240.224 10.728 215.833 89.5719C208.54 113.723 210.586 139.025 210.935 163.786C212.351 200.728 209.228 240.416 184.255 271.297C160.009 302.223 121.157 320.785 81.9944 332.477C55.6243 340.246 28.3038 345.25 0.740889 347.997C0.372349 348.031 0.0426018 347.796 0.00380802 347.465C-0.0349857 347.133 0.226872 346.837 0.595413 346.802C28.0711 344.117 55.3334 339.173 81.6258 331.474C120.604 319.913 159.31 301.534 183.498 270.818C208.433 240.084 211.575 200.614 210.256 163.786C209.965 138.999 207.977 113.644 215.338 89.4412C239.962 10.4926 346.277 -1.07723 424 0.0736532Z" fill="#BA497D" />
+                    <path d="M381 36C318.872 42.8568 228.674 55.6337 193.844 113.359C192.624 115.356 191.001 118.891 189.907 121.029C188.911 123.229 187.997 125.765 187.064 128.01C185.602 132.445 184.32 136.925 183.414 141.502C183.145 143.181 182.598 146.291 182.365 147.873C182.24 149.11 181.809 152.971 181.675 154.288C180.123 175.821 182.428 197.443 181.056 219.003C177.63 296.257 119.6 356.81 60.8974 401.944C57.5524 404.489 53.5438 407.467 50.441 409.817C50.0464 410.118 49.4814 410.038 49.1855 409.649C48.8806 409.261 48.9613 408.704 49.3559 408.412C53.499 405.267 59.2921 401.078 63.2559 397.906C112.785 359.275 160.905 311.163 175.783 248.736C181.163 226.293 180.769 203.063 180.294 180.142C180.132 168.7 180.114 156.956 181.926 145.629C186.508 115.268 204.076 92.7008 230.181 76.7253C275.172 48.8653 329.185 41.7257 380.991 36H381Z" fill="#BA497D" />
+                  </svg>
             </div>
             <div class="dec2 dec">
                 <svg width="401" height="486" viewBox="0 0 401 486" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -402,7 +410,7 @@
                     <div class="advantages__title section__title">Наши приемущества</div>
                     <div class="advantages__wrapper">
                         <div class="advantages__img">
-                            <img src="./images/adv.jpg" alt="">
+                            <div class="advantages__img-img"></div>
                             <div class="advantages__img-border"></div>
                         </div>
                         <div class="advantages__items">
@@ -429,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="advantages__item-content">
-                                    Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.
+                                    <p>Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.</p>
                                 </div>
                             </div>
                             <div class="advantages__item">
@@ -454,6 +462,9 @@
                                           </svg>
                                     </div>
                                 </div>
+                                <div class="advantages__item-content">
+                                    <p>Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.</p>
+                                </div>
                             </div>
                             <div class="advantages__item">
                                 <div class="advantages__item-top">
@@ -476,6 +487,9 @@
                                             </defs>
                                           </svg>
                                     </div>
+                                </div>
+                                <div class="advantages__item-content">
+                                    <p>Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.</p>
                                 </div>
                             </div>
                             <div class="advantages__item">
@@ -500,6 +514,9 @@
                                           </svg>
                                     </div>
                                 </div>
+                                <div class="advantages__item-content">
+                                    <p>Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.</p>
+                                </div>
                             </div>
                             <div class="advantages__item">
                                 <div class="advantages__item-top">
@@ -522,6 +539,9 @@
                                             </defs>
                                           </svg>
                                     </div>
+                                </div>
+                                <div class="advantages__item-content">
+                                    <p>Вы можете посетить нашу мастерскую и лично убедиться в профессионализме наших мастеров.</p>
                                 </div>
                             </div>
                         </div>
@@ -1247,7 +1267,7 @@
                           </div>
                         </div>
                     </div>
-                    <a href="#" class="drum__catalog-link">В каталог</a>
+                    <button class="drum__catalog-link bubbly-button">В каталог</и>
                 </div>
            </section>
             <section class="history">
@@ -1413,6 +1433,9 @@
                             <div class="swiper-slide reviews__item delivery">
                                 <img src="./images/review1.png" alt="">
                             </div>
+                            <div class="swiper-slide reviews__item delivery">
+                                <img src="./images/review1.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="reviews__socials">
@@ -1539,7 +1562,7 @@
                         <div class="newsletter__form">
                             <input type="text" placeholder="Имя">
                             <input type="text" placeholder="Email">
-                            <button class="newsletter__btn">Получить подарок</button>
+                            <button class="newsletter__btn bubbly-button">Получить подарок</button>
                         </div>
                         <div class="newsletter__descrpolicy">Нажимая кнопку “Получить подарок” Вы потверждаете, что ознакомлены и согласены с <a href="#">политикой обработки персональных данных</a></div>
                     </div>
@@ -1759,7 +1782,7 @@
                             </div>
                           </div>
                     </div>
-                    <a href="#" class="likeit__btn">Перейти в каталог</a>
+                    <button class="likeit__btn bubbly-button-green">Перейти в каталог</button>
                 </div>
            </section>
         <footer class="footer">
@@ -1849,7 +1872,7 @@
                 <div class="footer__actions">
                     <div class="footer__actions-title">А вы знали что с нами можно дружить?</div>
                     <div class="footer__actions-text">Подпишись на наш телеграм канал</div>
-                    <a href="#" class="footer__actions-btn">Подписаться</a>
+                    <button class="footer__actions-btn bubbly-button">Подписаться</и>
                 </div>
             </div>
             <div class="footer__bottom">
@@ -1922,7 +1945,11 @@
         </div>
     </div>
     <script src="./js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>

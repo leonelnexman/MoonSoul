@@ -306,6 +306,14 @@
 }
 
 .about-categories{
+    .categories__item:hover svg path {
+        transition: all 0.3s;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 1000;
+        animation: draw 5s forwards;
+        fill: none !important;
+        stroke: var(--1) !important;
+    }
     position: relative;
     &__dec1{
         position: absolute;
@@ -314,6 +322,7 @@
         &.visible{
             svg path{
                 stroke: var(--1) !important;
+                fill: none;
             }
         }
         svg{
@@ -372,7 +381,7 @@
              .categories__name{
                 font-size: 1.3rem;
                 text-align: center;
-                color: var(--3);
+                color: var(--1);
              }
         }
 
@@ -383,4 +392,8 @@
             color: var(--1);
         }
     }
+}
+
+.about-categories{
+
 }

@@ -105,4 +105,19 @@ window.addEventListener('scroll', function() {
       });
       splide.mount(window.splide.Extensions);
   }
+
+  if (document.getElementById('splide3')) {
+    const splide = new Splide('#splide3', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 1,
+        },
+    });
+    splide.mount(window.splide.Extensions);
+}
 });
