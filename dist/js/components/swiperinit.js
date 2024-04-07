@@ -50,6 +50,8 @@ export class SwiperInit {
           slidesPerView: 5,
           roundLengths: true,
           loop: true,
+          // freeMode: true,
+          // watchSlidesProgress: true,
           breakpoints: {
             300: {
               slidesPerView: 'auto',
@@ -102,7 +104,7 @@ export class SwiperInit {
           initialSlide: 1,
 
           coverflowEffect: {
-            rotate: -30,
+            rotate: -40,
             stretch: 1,
             depth: 1,
             modifier: 1,
@@ -135,15 +137,13 @@ export class SwiperInit {
         }
       }
 
+     
+
       if (document.querySelector('.reviews__slider')) {
-        if (window.innerWidth < 962) {
-          const reviews = new Swiper('.reviews__slider', {
-            spaceBetween: 27,
-            slidesPerView: 'auto',
-            freeMode: true,
-            watchSlidesProgress: true,
-          });
-        }
+        const reviews = new Swiper('.reviews__slider', {
+          slidesPerView: 4,
+          spaceBetween: 27,
+        });
       }
 
               
