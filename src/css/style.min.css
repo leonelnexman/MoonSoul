@@ -5228,11 +5228,12 @@ input, textarea {
   width: 2.5rem;
   height: 2.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.25);
-  background-color: var(--3);
+  background-color: var(--4);
   opacity: 0.5;
   transform: translate(0.5rem, 0.5rem);
 }
 #aura span {
+  font-weight: 700;
   opacity: 0;
   visibility: hidden;
 }
@@ -5251,7 +5252,7 @@ input, textarea {
 }
 
 #aura.active {
-  border: 0.0001rem solid var(--3);
+  border: 0.0001rem solid var(--4);
   transform: scale(3);
   background: none;
 }
